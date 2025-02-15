@@ -37,7 +37,7 @@
     }
     .menu{
         position: absolute;
-        right:0;
+        right:0.5px;
         margin-right: 10%;
         flex-direction: column;
         align-items: flex-end;
@@ -47,6 +47,7 @@
     .menubtn{
         position: relative; 
         display: block;
+        align-items: end;
         cursor: pointer;
     }
     .menuitem{

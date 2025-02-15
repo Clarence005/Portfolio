@@ -5,22 +5,21 @@
       "startDate": "Jul,2022",
       "endDate": "Aug,2022",
       "experience": [
-        "Developed GradNet, a Flutter-based platform for students to raise and resolve academic doubts.",
-        "Gained hands-on experience in a hybrid work environment, contributing to both the design and development of key features."
+        "Developed GradNet, a Flutter-based platform for students to raise and resolve academic doubts."
 
     ],
-      "imageSrc": "../../assets/history/bezohmind.png"
+      "imageSrc": "/history/bezohmind.png"
     },
     {
       "role": "Technical Team Head",
       "organisation": "SSN Sportium CLub",
       "startDate": "Oct,2023",
-      "endDate": "",
+      "endDate": "Present",
       "experience": [
        "Developed the SSN Sportium website using the MERN stack, allowing users to view match results and explore club details."
 
     ],
-      "imageSrc": "../../assets/history/sportium.png"
+      "imageSrc": "/history/sportium.png"
     }
 
 ]

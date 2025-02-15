@@ -28,7 +28,7 @@ export const About = () => {
             <li  className={styles.item}>
                 <img src = {servericon} alt = "server icon"/>
                 <div className={styles.itemtext}>
-                <h3>Backend Developer</h3><br/>  <p>I'm a backend developer with expertise in building robust server-side applications and efficiently managing databases. I have experience working with both SQL and NoSQL databases, ensuring seamless data access and storage.</p>
+                <h3>Backend Developer</h3><br/>  <p>I'm a backend developer skilled in server-side applications and database management.</p>
                 </div>
             </li>
         </ul>

@@ -1,54 +1,54 @@
 [
     {
       "title": "HTML",
-      "imageSrc": "../../../assets/skills/html.png"
+      "imageSrc": "/skills/html.png"
     },
     {
       "title": "CSS",
-      "imageSrc": "../../../assets/skills/css.png"
+      "imageSrc": "/skills/css.png"
     },
     {
       "title": "React",
-       "imageSrc": "../../../assets/skills/react.png"
+       "imageSrc": "/skills/react.png"
     },
     {
         "title": "Flutter",
-         "imageSrc": "../../../assets/skills/flutter.png"
+         "imageSrc": "/skills/flutter.png"
       },
     {
       "title": "Node",
-      "imageSrc": "../../../assets/skills/node.png"
+      "imageSrc": "/skills/node.png"
     },
     {
       "title": "SQL",
-      "imageSrc": "../../../assets/skills/sql.png"
+      "imageSrc": "/skills/sql.png"
     },
     {
       "title": "Firebase",
-      "imageSrc": "../../../assets/skills/firebase.png"
+      "imageSrc": "/skills/firebase.png"
     },
     {
       "title": "Git",
-      "imageSrc": "../../../assets/skills/git.png"
+      "imageSrc": "/skills/git.png"
     },
     {
         "title": "Flask",
-        "imageSrc": "../../../assets/skills/flask.png"
+        "imageSrc": "/skills/flask.png"
     },
     {
         "title": "JS",
-        "imageSrc": "../../../assets/skills/js.png"
+        "imageSrc": "/skills/js.png"
     },
     {
         "title": "Java",
-        "imageSrc": "../../../assets/skills/java.png"
+        "imageSrc": "/skills/java.png"
     },
     {
         "title": "Python",
-        "imageSrc": "../../../assets/skills/python.png"
+        "imageSrc": "/skills/python.png"
     },
     {
         "title": "C",
-        "imageSrc": "../../../assets/skills/C.png"
+        "imageSrc": "/skills/C.png"
       }
   ]

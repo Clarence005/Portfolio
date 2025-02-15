@@ -1,7 +1,7 @@
 import React from 'react';
 import projects from "../../data/projects.json";
 import { ProjectCard } from './projectCard';
-import styles from "./project.module.css"
+import styles from "./Project.module.css"
 export const Projects = () => {
   return (
     <section id="projects" className={styles.container}>

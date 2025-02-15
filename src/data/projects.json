@@ -1,0 +1,30 @@
+[
+    {
+      "title": "GradNet",
+      "imageSrc": "../../assets/projects/gradnet.jpg",
+      "description": "Developed the GradNet app for students to raise academic doubts and post events using Flutter and Firebase.",
+      "skills": ["Flutter", "Firebase"],
+      "source": "https://github.com/Clarence005/Bezohminds-GradNet"
+    },
+    {
+      "title": "Soil Seive analysis",
+      "imageSrc": "../../assets/projects/soil.jpg",
+      "description": "Developed a Soil Sieve Analysis app using Flutter and Firebase, enabling users to test soil based on specific parameters, store their results as reports, and download them as PDFs.",
+      "skills": ["Flutter", "Firebase"],
+      "source": "https://github.com/Clarence005/Soil_sieve_analysis"
+    },
+    {
+      "title": "College Digitization Portal Website",
+      "imageSrc": "../../assets/projects/project.png",
+      "description": "Developed a College Digitization Portal for managing extracurricular activities, enabling students to record their activities and faculty to oversee and manage records",
+      "skills": ["Html", "CSS", "SQL","Flask","Python"],
+      "source": "https://github.com/Ashwin0006/studentActivity-Digitization"
+    },
+    {
+        "title": "Plant Disease Recognition System",
+        "imageSrc": "../../assets/projects/pdr.jpeg",
+        "description": "Developed a plant disease recognition system using CNN to classify diseases in crops. Additionally, built a small agribot that answers queries related to various crops and plants.",
+        "skills": ["Python", "ML", "Streamlit","NLP"],
+        "source": "https://github.com/Clarence005/PLANT-DISEASE-RECOGNITION-SYSTEM"
+      }
+  ]

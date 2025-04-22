@@ -58,6 +58,7 @@
     }
     .links{
         align-items: start;
+       
     }
     .text h2{
         font-size: 30px;
@@ -72,7 +73,7 @@
     .link a{
         color: var(--color-text);
         text-decoration: none;
-        font-size: 17px;
+        font-size: 15px;
         font-weight: 200;
         letter-spacing: 1px;
     }

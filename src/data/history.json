@@ -16,7 +16,7 @@
       "startDate": "Oct,2023",
       "endDate": "Present",
       "experience": [
-       "Developed the SSN Sportium website using the MERN stack, allowing users to view match results and explore club details."
+       "Developed the SSN Sportium website using the Next.js, allowing users to view match results and explore club details."
 
     ],
       "imageSrc": "/history/sportium.png"

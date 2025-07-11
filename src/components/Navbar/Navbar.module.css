@@ -1,76 +1,102 @@
 @import "../../vars.css";
-.navbar{
-    position: relative;
-    display: flex;
+.navbar {
+  position: sticky;
+  top: 0;
+  background: rgba(18, 24, 38, 0.95);
+  box-shadow: 0 2px 16px 0 rgba(25, 55, 109, 0.10);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 22px 10% 12px 10%;
+  z-index: 100;
+  margin: 0;
+  transition: background 0.3s, box-shadow 0.3s;
+}
+
+.title {
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-decoration: none;
+  color: var(--color-text);
+  transition: color 0.2s;
+}
+
+.menuitem {
+  display: flex;
+  gap: 40px;
+  list-style: none;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+.menuitem a {
+  font-size: 22px;
+  color: var(--color-text);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+  position: relative;
+}
+.menuitem a::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: var(--color-primary);
+  transition: width 0.3s;
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+}
+.menuitem a:hover::after {
+  width: 100%;
+}
+.menuitem a:hover {
+  color: var(--color-primary);
+}
+.menubtn {
+  display: none;
+}
+
+@media screen and (max-width: 830px) {
+  .navbar {
+    flex-direction: row;
     align-items: center;
-    justify-content: space-between;
-    padding-top: 61px;
-    z-index:2;
-    margin: 0 10%;
-}
-
-.title{
-    font-size: 30px;
-    font-weight: 600;
-    text-decoration: none;
-    color:var(--color-text);
-}
-
-.menuitem{
-    display: flex;
-    gap: 47px;
-    list-style: none;
-}
-.menuitem a{
-    font-size: 25px;
-    color:var(--color-text);
-     text-decoration: none;
-}
-.menubtn{
+    padding: 16px 4% 10px 4%;
+  }
+  .menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 200;
+  }
+  .menubtn {
+    display: block;
+    position: relative;
+    z-index: 210;
+    width: 38px;
+    height: 38px;
+    cursor: pointer;
+  }
+  .menuitem {
     display: none;
-}
-
-@media screen and (max-width:830px) {
-    .navbar{
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    .menu{
-        position: absolute;
-        left: 95%;
-        margin-right: 10%;
-        flex-direction: column;
-        align-items: flex-end;
-        gap: 11px;
-        z-index:3;
-    }
-    .menubtn{
-        position: relative; 
-        display: block;
-        align-items: end;
-        cursor: pointer;
-    }
-    .menuitem{
-        display: none;
-        flex-direction: column;
-        align-items: center;
-        position: absolute;
-        right: 30px;
-        top : 10px;
-        z-index: 5;
-        gap:13px;
-        border-radius: 10px;
-        background: rgb(25,55,109);
-        background: linear-gradient(
-            0deg,
-            rgba(25,55,109,0.2)0%,
-            rgba(25,55,109,1)100%
-        );
-        padding:24px 33px ;
-        box-shadow: 0 0 4px 0 rgba(0,0,0,0.25);
-    }
-    .menuopen{
-        display: flex;
-        z-index: index 1;
-    }
+    flex-direction: column;
+    align-items: flex-end;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 70vw;
+    height: 100vh;
+    background: rgba(18, 24, 38, 0.98);
+    box-shadow: -2px 0 16px 0 rgba(25, 55, 109, 0.18);
+    padding: 80px 32px 32px 32px;
+    gap: 28px;
+    transition: transform 0.35s cubic-bezier(0.77,0,0.175,1);
+    transform: translateX(100%);
+  }
+  .menuopen {
+    display: flex;
+    transform: translateX(0);
+  }
 }

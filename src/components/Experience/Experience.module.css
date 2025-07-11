@@ -1,124 +1,146 @@
+/* Experience.module.css */
+/* ---------------------------------------------------- */
 @import "../../vars.css";
 
-.container {
+/* ---------- SECTION ---------- */
+.timelineSection {
+  margin: 80px 15% 60px;
   color: var(--color-text);
-  margin-top: 79px;
-  margin-left: 10%;
-  margin-right: 10%;
 }
-
-.title {
-  color: var(--color-text);
+.timelineTitle {
   font-size: 35px;
   font-weight: 700;
-  letter-spacing: 1.75px;
-  text-transform: uppercase;
-}
 
-.content {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  margin-top: 30px;
+  letter-spacing: 2px;
+  margin-bottom: 48px;
+  background:var(--color-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
 }
-
-.skills {
-  width: 45%;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 37px;
-}
-
-.skill {
+.timeline {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 11px;
 }
 
-.skillImageContainer {
-  background-color: var(--color-secondary);
-  border-radius: 100%;
+/* ---------- ITEM ---------- */
+.timelineItem {
   display: flex;
+  flex-direction: column;
   align-items: center;
+  width: 100%;
+  margin-bottom: 48px;
+}
+.timelineYear {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--color-secondary);
+  margin-bottom: 12px;
+  text-align: center;
+}
+.timelineContent {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ---------- CARD ---------- */
+.timelineCard {
+  background: #15243c;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(25, 55, 109, 0.10);
+  border: 1.5px solid #2a3350;
+  transition: transform .18s, box-shadow .18s;
+  padding: 28px 32px;
+  width: 400px;
+   min-height: 200px; 
+  text-align: center;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  width: 120px;
-  height: 120px;
-}
-
-.skillImageContainer img {
-  width: 75px;
-}
-
-.skill p {
-  font-size: 25px;
-  font-family: var(--font-roboto);
-  font-weight: 500;
-}
-
-.history {
-    margin-top: 30px;
-  width: 45%;
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-}
-
-.historyItem {
-  display: flex;
-  flex-direction: row;
   align-items: center;
-  flex-wrap: wrap;
-  background: #19376d;
-  background: linear-gradient(90deg, #19376d 0%, rgba(25, 55, 109, 0) 100%);
-  border-radius: 10px;
-  padding: 24px;
+  margin: 0 32px;
+  
 }
-
-.historyItem img {
-  width: 70px;
-  height: 70px;
+.timelineCardTitle {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: var(--color-secondary);
 }
-
-.historyItemDetails {
-  font-family: var(--font-roboto);
-}
-
-.historyItemDetails h3 {
-  font-size: 25px;
-  font-weight: 500;
-}
-
-.historyItemDetails p {
-  font-size: 15px;
-  font-weight: 200;
-}
-
-.historyItemDetails ul {
-  margin-top: 7px;
-  list-style-position: inside;
-  list-style-type: disc;
-  margin-left: 17px;
-}
-.historyItemDetails li{
+.timelineCardDesc {
   font-size: 18px;
-  font-weight: 100;
+  font-weight: 400;
+  color: var(--color-text);
+  line-height: 1.5;   /* ← bumps the vertical rhythm */
+  white-space: pre-line;
 }
+
+/* ---------- CONNECTOR (line + arrow) ---------- */
+.timelineConnector {
+  position: relative;                          /* anchor pseudo */
+  width: 4px;                                  /* line thickness */
+  height: 64px;                                /* full length (line + arrow) */
+  margin: 0 auto;
+  background:var(--color-primary);
+  border-radius: 2px;
+}
+
+/* arrow head */
+.timelineConnector::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -14px;                               /* flush under the line */
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+  border-top: 14px solid var(--color-primary);              /* ▼ colour matches line */
+}
+
+/* ---------------------------------------------------- */
+/* --------------------  MOBILE  ---------------------- */
 @media screen and (max-width: 830px) {
-  .content {
-    flex-direction: column;
-    align-items: center;
-    gap: 34px;
+  .timelineSection {
+    margin: 40px 3% 30px;
+  }
+  .timelineTitle {
+    font-size: 35px;
+    font-weight: 700;
+    margin-bottom: 28px;
+    margin-left:5%;
+  }
+  .timelineCard {
+    padding: 18px 8px;
+    width: 95vw;
+    max-width: 98vw;
+    height: 120px;
+    margin: 0;
+  }
+  .timelineYear {
+    font-size: 16px;
+  }
+  .timelineCardTitle {
+    font-size: 16px;
+  }
+  .timelineCardDesc {
+    font-size: 13px;
   }
 
-  .skills {
-    width: 100%;
-    flex-direction: row;
-    justify-content: center;
+  /* mobile connector sizes */
+  .timelineConnector {
+    width: 3px;
+    height: 40px;
   }
-
-  .history {
-    width: 100%;
-    gap: 9px;
+  .timelineConnector::after {
+    bottom: -10px;
+    border-left: 9px solid transparent;
+    border-right: 9px solid transparent;
+    border-top: 10px solid var(--color-primary);
   }
 }

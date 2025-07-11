@@ -5,6 +5,8 @@ import { About } from "./components/About/About";
 import { Experience } from "./components/Experience/Experience";
 import {Projects} from "./components/Projects/Projects"
 import { Contact } from "./components/Contact/Contact";
+import { TechStack } from "./components/Techstack/TechStack";
+import { Achievements } from "./components/Achievements/Achievements";
 function App() {
   
 
@@ -13,8 +15,10 @@ function App() {
      <Navbar />
      <Hero />
      <About />
+     <TechStack />
      <Experience />
       <Projects />
+      <Achievements />
       <Contact />
     </div>
   );

@@ -1,39 +1,29 @@
-import React from 'react';
-import skills from "../../data/skills.json";
+import React, { useEffect } from 'react';
 import history from "../../data/history.json";
 import styles from "./Experience.module.css";
+import 'aos/dist/aos.css';
+import AOS from 'aos';
 
 export const Experience = () => {
+  useEffect(() => {
+    AOS.init({ once: true, duration: 900 });
+  }, []);
   return (
-    <section id="experience" className={styles.container}>
-      <h2 className={styles.title}>Experience</h2>
-      <div className={styles.content}>
-        <div className={styles.skills}>
-          {skills.map((skill, id) => (
-            <div key={id} className={styles.skill}>
-              <div className={styles.skillImageContainer}>
-                <img src={skill.imageSrc} alt={skill.title} />
+    <section id="experience" className={styles.timelineSection}>
+      <h2 className={styles.timelineTitle}>TIMELINE</h2>
+      <div className={styles.timeline}>
+        {history.map((item, idx) => (
+          <div className={styles.timelineItem} key={idx} data-aos="fade-up" data-aos-delay={idx * 120}>
+            <div className={styles.timelineYear}>{item.year}</div>
+            <div className={styles.timelineContent}>
+              <div className={styles.timelineCard}>
+                <h3 className={styles.timelineCardTitle}>{item.title}</h3>
+                <p className={styles.timelineCardDesc}>{item.description}</p>
               </div>
-              <p>{skill.title}</p>
             </div>
-          ))}
-        </div>
-        <ul className={styles.history}>
-          {history.map((historyItem, index) => (
-            <li key={index} className={styles.historyItem}>
-              <img src={historyItem.imageSrc} alt={`${historyItem.organisation} logo`} />
-              <div className={styles.historyItemDetails}>
-                <h3>{`${historyItem.role}, ${historyItem.organisation}`}</h3>
-                <p>{`${historyItem.startDate} - ${historyItem.endDate}`}</p>
-                <ul>
-                  {historyItem.experience.map((experience, id) => (
-                    <li key={id}>{experience}</li>
-                  ))}
-                </ul>
-              </div>
-            </li>
-          ))}
-        </ul>
+            {idx !== history.length - 1 && <div className={styles.timelineConnector}></div>}
+          </div>
+        ))}
       </div>
     </section>
   );

@@ -1,4 +1,11 @@
 [
+  {
+    "title": "Parkinsons Disease Detection",
+    "imageSrc": "/projects/parkinson.png",
+    "description": "Developed a Parkinson’s Disease detection system using Swin Transformer for classifying spiraldrawing images, integrated with a React web app and Flutter mobile app for real-time, userfriendly diagnostic predictions",
+    "skills": ["Flutter", "Firebase"],
+    "source": "https://github.com/Clarence005/Parkinson_disease_recognition"
+  },
     {
       "title": "GradNet",
       "imageSrc": "/projects/gradnet.jpg",

@@ -8,3 +8,12 @@
 html{
   scroll-behavior: smooth;
 }
+
+::-webkit-scrollbar {
+  width: 8px;
+  background: var(--color-bg-secondary);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-border);
+  border-radius: 8px;
+}

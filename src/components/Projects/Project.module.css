@@ -1,27 +1,36 @@
+/* Project.module.css  (wrapper for the whole section) */
 @import "../../vars.css";
 
 .container {
   margin-top: 76px;
   color: var(--color-text);
-  margin-left: 10%;
-  margin-right: 10%;
+
+  padding-left: 10%;
+  padding-right: 10%;
+
+  /* make the padding part of the element's width calc */
+  box-sizing: border-box;
 }
 
 .title {
   font-size: 35px;
   font-weight: 700;
   letter-spacing: 1.75px;
+  color:var(--color-primary);
   text-transform: uppercase;
 }
 
 .projects {
-    margin-top: 37px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    gap: 30px;
-    width: 100%;
-  }
-  
+  margin-top: 37px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 30px;
+  width: 100%;
+
+  /* avoid stray 1‑2px overflow from sub‑pixels */
+  overflow-x: hidden;
+}
+
+@media (max-width: 830px) {
+  .projects { grid-template-columns: 1fr; }
+}

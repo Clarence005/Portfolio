@@ -1,25 +1,27 @@
 [
-    {
-      "role": "Software Engineer",
-      "organisation": "Bezohminds",
-      "startDate": "Jul,2022",
-      "endDate": "Aug,2022",
-      "experience": [
-        "Developed GradNet, a Flutter-based platform for students to raise and resolve academic doubts."
-
-    ],
-      "imageSrc": "/history/bezohmind.png"
-    },
-    {
-      "role": "Technical Team Head",
-      "organisation": "SSN Sportium Club",
-      "startDate": "Oct,2023",
-      "endDate": "Present",
-      "experience": [
-       "Developed the SSN Sportium website using the Next.js, allowing users to view match results and explore club details."
-
-    ],
-      "imageSrc": "/history/sportium.png"
-    }
-
+  {
+    "year": "2020",
+    "title": "RMHS - 10th Grade",
+    "description": "Percentage: 81.8%"
+  },
+  {
+    "year": "2022",
+    "title": "RMHS - 12th Grade",
+    "description": "Percentage: 95.8%. Got 2 centums: Mathematics and Chemistry."
+  },
+  {
+    "year": "2024",
+    "title": "Bezohminds Intern",
+    "description": "Developed GradNet, a Flutter-based platform for students to raise and resolve academic doubts."
+  },
+  {
+    "year": "2025",
+    "title": "Canvas Space",
+    "description": "Worked with .m3u8 HLS video streaming to insert ads, managing logic with Node.js, Express, and MongoDB, and rendering playback in a React Native app."
+  },
+  {
+    "year": "2026",
+    "title": "SSN Undergraduate",
+    "description": "UG in Information Technology, CGPA: 8.554, Technical Team Head @ SSN Sportium(Oct 2024-Jun 2025),Advisory Team -Technical Team(Jun 2025 - Present),TechGrad Hackathon Runner Up,Zenith Hackathon Special Mention"
+  }
 ]

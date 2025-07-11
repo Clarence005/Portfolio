@@ -1,10 +1,9 @@
 :root{
     --color-text :#fff;
-    --color-primary:#576cbc;
-    --color-secondary:#19376d;
+    --color-primary: #00ffff;
+    --color-secondary:#7fdbff;
     --color-dark:#0b2447;
     --color-bg:#04152d; 
-
     --font-robot:"Roboto";
-     
+    
 }
